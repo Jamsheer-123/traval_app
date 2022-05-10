@@ -1,0 +1,115 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "TC.####",
+ "creation": "2022-05-10 15:11:44.438929",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "departure",
+  "column_break_2",
+  "arrival",
+  "section_break_4",
+  "amended_from",
+  "vehicle",
+  "departure_date",
+  "arrival_date",
+  "bus_seat",
+  "train_seat"
+ ],
+ "fields": [
+  {
+   "fieldname": "departure",
+   "fieldtype": "Data",
+   "label": "Departure"
+  },
+  {
+   "fieldname": "arrival",
+   "fieldtype": "Data",
+   "label": "Arrival"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Travel Category",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Select",
+   "label": "Vehicle",
+   "options": "Bus\nTrain"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "departure_date",
+   "fieldtype": "Date",
+   "label": "Departure Date"
+  },
+  {
+   "fieldname": "arrival_date",
+   "fieldtype": "Date",
+   "label": "Arrival Date"
+  },
+  {
+   "depends_on": "eval:doc.vehicle=='Bus'",
+   "fieldname": "bus_seat",
+   "fieldtype": "Int",
+   "label": "Total seat"
+  },
+  {
+   "depends_on": "eval:doc.vehicle=='Train'",
+   "fieldname": "train_seat",
+   "fieldtype": "Int",
+   "label": "Total seat"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-05-10 16:27:35.146270",
+ "modified_by": "Administrator",
+ "module": "Traval App",
+ "name": "Travel Category",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "admin",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
