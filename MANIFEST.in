@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include traval_app *.css
+recursive-include traval_app *.csv
+recursive-include traval_app *.html
+recursive-include traval_app *.ico
+recursive-include traval_app *.js
+recursive-include traval_app *.json
+recursive-include traval_app *.md
+recursive-include traval_app *.png
+recursive-include traval_app *.py
+recursive-include traval_app *.svg
+recursive-include traval_app *.txt
+recursive-exclude traval_app *.pyc
