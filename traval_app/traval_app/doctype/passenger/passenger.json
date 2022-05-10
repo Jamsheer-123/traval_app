@@ -1,0 +1,121 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-05-10 16:00:45.256696",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "departure",
+  "arrival",
+  "departure_date",
+  "arrival_date",
+  "passenger_name",
+  "age",
+  "phone_no",
+  "no_passenger",
+  "available_seat",
+  "amended_from",
+  "cost",
+  "submit"
+ ],
+ "fields": [
+  {
+   "fieldname": "passenger_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Passenger Name"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Age"
+  },
+  {
+   "fieldname": "phone_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Phone No"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Passenger",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "no_passenger",
+   "fieldtype": "Int",
+   "label": "No of Passenger"
+  },
+  {
+   "fieldname": "submit",
+   "fieldtype": "Button",
+   "label": "Submit"
+  },
+  {
+   "fieldname": "departure",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Departure"
+  },
+  {
+   "fieldname": "arrival",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Arrival"
+  },
+  {
+   "fieldname": "departure_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Departure Date"
+  },
+  {
+   "fieldname": "arrival_date",
+   "fieldtype": "Date",
+   "label": "Arrival Date"
+  },
+  {
+   "fieldname": "available_seat",
+   "fieldtype": "Data",
+   "label": "Available Seat"
+  },
+  {
+   "fieldname": "cost",
+   "fieldtype": "Int",
+   "label": "Cost"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-05-10 16:28:07.075489",
+ "modified_by": "Administrator",
+ "module": "Traval App",
+ "name": "Passenger",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
