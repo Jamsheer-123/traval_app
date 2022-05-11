@@ -7,26 +7,35 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "route",
+  "section_break_2",
   "departure",
   "column_break_2",
   "arrival",
   "section_break_4",
   "amended_from",
-  "vehicle",
   "departure_date",
+  "column_break_7",
   "arrival_date",
-  "bus_seat",
-  "train_seat"
+  "section_break_7",
+  "vehicle",
+  "contact",
+  "column_break_11",
+  "total_seat",
+  "column_break_13",
+  "cost"
  ],
  "fields": [
   {
    "fieldname": "departure",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Departure"
   },
   {
    "fieldname": "arrival",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Arrival"
   },
   {
@@ -40,9 +49,8 @@
   },
   {
    "fieldname": "vehicle",
-   "fieldtype": "Select",
-   "label": "Vehicle",
-   "options": "Bus\nTrain"
+   "fieldtype": "Data",
+   "label": "vehicle"
   },
   {
    "fieldname": "column_break_2",
@@ -55,30 +63,60 @@
   {
    "fieldname": "departure_date",
    "fieldtype": "Date",
-   "label": "Departure Date"
+   "label": "Departure Date",
+   "reqd": 1
   },
   {
    "fieldname": "arrival_date",
    "fieldtype": "Date",
-   "label": "Arrival Date"
+   "label": "Arrival Date",
+   "reqd": 1
   },
   {
-   "depends_on": "eval:doc.vehicle=='Bus'",
-   "fieldname": "bus_seat",
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Int",
+   "label": "contact"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_seat",
    "fieldtype": "Int",
    "label": "Total seat"
   },
   {
-   "depends_on": "eval:doc.vehicle=='Train'",
-   "fieldname": "train_seat",
-   "fieldtype": "Int",
-   "label": "Total seat"
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cost",
+   "fieldtype": "Currency",
+   "label": "cost"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-05-10 16:27:35.146270",
+ "modified": "2022-05-11 13:22:16.265414",
  "modified_by": "Administrator",
  "module": "Traval App",
  "name": "Travel Category",
