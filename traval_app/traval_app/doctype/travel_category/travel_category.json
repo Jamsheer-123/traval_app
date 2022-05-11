@@ -108,7 +108,7 @@
   }
  ],
  "index_web_pages_for_search": 1,
- "is_submittable": 1,
+ "is_submittable": 1,s
  "links": [],
  "modified": "2022-05-11 12:45:02.278222",
  "modified_by": "Administrator",
@@ -144,4 +144,4 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1
-}
+}s
