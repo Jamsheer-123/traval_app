@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-05-10 15:38:29.201042",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "passenger_name",
+  "no_passenger",
+  "payment",
+  "departure",
+  "arrival",
+  "seat_booking",
+  "available_vehicle",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "passenger_name",
+   "fieldtype": "Data",
+   "label": "Passenger Name"
+  },
+  {
+   "fieldname": "payment",
+   "fieldtype": "Currency",
+   "label": "Payment"
+  },
+  {
+   "fieldname": "seat_booking",
+   "fieldtype": "Data",
+   "label": "Seat Booking"
+  },
+  {
+   "fieldname": "available_vehicle",
+   "fieldtype": "Data",
+   "label": "Available Vehicle"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Transaction",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "departure",
+   "fieldtype": "Data",
+   "label": "Departure"
+  },
+  {
+   "fieldname": "arrival",
+   "fieldtype": "Data",
+   "label": "Arrival"
+  },
+  {
+   "fieldname": "no_passenger",
+   "fieldtype": "Data",
+   "label": "No of passenger"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-05-10 16:20:06.311862",
+ "modified_by": "Administrator",
+ "module": "Traval App",
+ "name": "Transaction",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
