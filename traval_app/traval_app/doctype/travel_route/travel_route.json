@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-05-11 11:54:39.758585",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "route_name",
+  "from_location",
+  "to_location",
+  "stop",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "from_location",
+   "fieldtype": "Data",
+   "label": "From Location"
+  },
+  {
+   "fieldname": "to_location",
+   "fieldtype": "Data",
+   "label": "To Location"
+  },
+  {
+   "fieldname": "stop",
+   "fieldtype": "Table",
+   "label": "Stop",
+   "options": "Stop"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Travel Route",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "route_name",
+   "fieldtype": "Data",
+   "label": "Route Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-05-11 12:40:07.610852",
+ "modified_by": "Administrator",
+ "module": "Traval App",
+ "name": "Travel Route",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
