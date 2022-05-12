@@ -1,40 +1,82 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "TR.####",
  "creation": "2022-05-10 15:38:29.201042",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "passenger_name",
-  "no_passenger",
-  "payment",
+  "route",
+  "route_name",
   "departure",
   "arrival",
-  "seat_booking",
+  "user_name",
+  "no_passenger",
+  "payment",
   "available_vehicle",
   "amended_from"
  ],
  "fields": [
   {
+<<<<<<< HEAD
    "fieldname": "passenger_name",
    "fieldtype": "Data",
    "label": "Passenger Name"
   },
   {
+=======
+>>>>>>> 62ee626... fix:Transaction
    "fieldname": "payment",
    "fieldtype": "Currency",
    "label": "Payment"
   },
   {
-   "fieldname": "seat_booking",
-   "fieldtype": "Data",
-   "label": "Seat Booking"
-  },
-  {
    "fieldname": "available_vehicle",
    "fieldtype": "Data",
-   "label": "Available Vehicle"
+   "label": "Available Seat"
+  },
+  {
+   "fetch_from": "route.from_location",
+   "fieldname": "departure",
+   "fieldtype": "Data",
+   "label": "Departure"
+  },
+  {
+   "fetch_from": "route.to_location",
+   "fieldname": "arrival",
+   "fieldtype": "Data",
+   "label": "Arrival"
+  },
+  {
+   "fieldname": "no_passenger",
+   "fieldtype": "Data",
+   "label": "No of passenger"
+<<<<<<< HEAD
+=======
+  },
+  {
+   "fieldname": "passenger_details",
+   "fieldtype": "Table",
+   "label": "Passenger Details",
+   "options": "Passenger Details"
+  },
+  {
+   "fieldname": "user_name",
+   "fieldtype": "Data",
+   "label": "User Name"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Link",
+   "label": "Route",
+   "options": "Travel Route"
+  },
+  {
+   "fetch_from": "route.route_name",
+   "fieldname": "route_name",
+   "fieldtype": "Data",
+   "label": "Route Name"
   },
   {
    "fieldname": "amended_from",
@@ -44,27 +86,17 @@
    "options": "Transaction",
    "print_hide": 1,
    "read_only": 1
-  },
-  {
-   "fieldname": "departure",
-   "fieldtype": "Data",
-   "label": "Departure"
-  },
-  {
-   "fieldname": "arrival",
-   "fieldtype": "Data",
-   "label": "Arrival"
-  },
-  {
-   "fieldname": "no_passenger",
-   "fieldtype": "Data",
-   "label": "No of passenger"
+>>>>>>> 62ee626... fix:Transaction
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
+<<<<<<< HEAD
  "modified": "2022-05-10 16:20:06.311862",
+=======
+ "modified": "2022-05-12 10:33:06.494275",
+>>>>>>> 62ee626... fix:Transaction
  "modified_by": "Administrator",
  "module": "Traval App",
  "name": "Transaction",
