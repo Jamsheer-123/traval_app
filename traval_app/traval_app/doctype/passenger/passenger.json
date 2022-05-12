@@ -1,119 +1,55 @@
 {
+ "_liked_by": "[\"Administrator\"]",
  "actions": [],
- "allow_rename": 1,
- "autoname": "TC.####",
- "creation": "2022-05-10 15:11:44.438929",
+ "autoname": "field:passenger_name",
+ "creation": "2022-05-10 16:00:45.256696",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "route",
-  "section_break_2",
-  "departure",
-  "column_break_2",
-  "arrival",
-  "section_break_4",
-  "amended_from",
-  "departure_date",
-  "column_break_7",
-  "arrival_date",
-  "section_break_7",
-  "vehicle",
-  "column_break_11",
-  "total_seat",
-  "column_break_13",
-  "cost"
+  "passenger_name",
+  "age",
+  "phone_no",
+  "amended_from"
  ],
  "fields": [
-  {
-   "fieldname": "departure",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Departure"
-  },
-  {
-   "fieldname": "arrival",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Arrival"
-  },
   {
    "fieldname": "amended_from",
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "Travel Category",
+   "options": "Passenger",
    "print_hide": 1,
    "read_only": 1
   },
   {
-   "fieldname": "column_break_2",
-   "fieldtype": "Column Break"
+   "fieldname": "passenger_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Passenger Name",
+   "unique": 1
   },
   {
-   "fieldname": "section_break_4",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "departure_date",
-   "fieldtype": "Date",
-   "label": "Departure Date",
-   "reqd": 1
-  },
-  {
-   "fieldname": "arrival_date",
-   "fieldtype": "Date",
-   "label": "Arrival Date",
-   "reqd": 1
-  },
-  {
-   "fieldname": "cost",
-   "fieldtype": "Currency",
-   "label": "cost"
-  },
-  {
-   "fieldname": "total_seat",
+   "fieldname": "age",
    "fieldtype": "Int",
-   "label": "Total seat"
+   "in_list_view": 1,
+   "label": "Age"
   },
   {
-   "fieldname": "vehicle",
+   "fieldname": "phone_no",
    "fieldtype": "Data",
-   "label": "vehicle"
-  },
-  {
-   "fieldname": "section_break_7",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "column_break_7",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "column_break_11",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "column_break_13",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "route",
-   "fieldtype": "Data",
-   "label": "Route"
-  },
-  {
-   "fieldname": "section_break_2",
-   "fieldtype": "Section Break"
+   "in_list_view": 1,
+   "label": "Phone No",
+   "options": "Phone"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-05-11 12:45:02.278222",
+ "modified": "2022-05-12 14:58:42.685254",
  "modified_by": "Administrator",
  "module": "Traval App",
- "name": "Travel Category",
+ "name": "Passenger",
  "owner": "Administrator",
  "permissions": [
   {
@@ -125,18 +61,6 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "admin",
    "share": 1,
    "write": 1
   }
