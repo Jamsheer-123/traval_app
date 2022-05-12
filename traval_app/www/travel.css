@@ -1,49 +1,131 @@
 
-  
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  html {
-    scroll-behavior: smooth;
-  }
-  body {
-    background-color: #e23131;
-    margin: 0;
-    padding: 0;
-    color: white;
-    position: relative;
-    background: transparent;
-    background-image: url("./assets/images/11.jpg");
-  }
-  .nav-link:hover {
-    color: rgb(88, 196, 26) !important;
-  }
-  h1{
-      color: rgb(96, 146, 62);
-      padding-left: 265px;
-      padding-top: 25px;
-  }
-  #location{
-    padding-top: 13px;
-    display: flex;
-    justify-content: space-around;
+.container    { 
+  font-family:'Roboto';
+  width:600px; 
+  display:block;
+}
+h2     { 
+  text-align:center; 
+  margin-bottom:50px; 
+}
+h2 small { 
+  font-weight:normal; 
+  color:#888; 
+  display:block; 
+}
 
-  }
-  #available{
+/* form starting stylings ------------------------------- */
+#group        { 
+  position:relative; 
+  margin-bottom:45px; 
+}
+input         {
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+input:focus     { outline:none; }
+
+/* LABEL ======================================= */
+label          {
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+ input:focus ~ label, input:valid ~ label    {
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+} 
+
+/* BOTTOM BARS ================================= */
+.bar  { position:relative; display:block; width:300px; }
+.bar:before, .bar:after   {
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+} 
+ .bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+ input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+} 
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+/* input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+} */
+
+/* ANIMATIONS ================ */
+/* @-webkit-keyframes inputHighlighter {
+  from { background:#5264AE; }
+  to  { width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+  from { background:#5264AE; }
+  to  { width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+  from { background:#5264AE; }
+  to  { width:0; background:transparent; }
+}*/
+
+/* .all-container{
+    padding-top: 120px;
+} */
+#available{
     width: 550px;
+}
+#divider {
+    margin-top: 23px;
+    height: 4px;
+    width: 100%;
+    background-color: rgb(4, 15, 9);
+    display: inline-block;
+    border-radius: 50%;
+    box-shadow: 7px 7px 7px rgb(0, 0, 0,0.5);
+  }
+  .btn btn-success{
+    margin-top: 13px;
+  }
+  
 
-  }
-  #seating{
-    padding-top: 13px;
-    padding-left: 300px;
-    display: flex;
-    /* justify-content: space-around; */
-  }
-  #amount1{
-    padding-top: 13px;
-    display: flex;
-    align-items: center;
-    
-  }
+
+
