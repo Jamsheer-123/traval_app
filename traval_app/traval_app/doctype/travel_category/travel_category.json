@@ -26,16 +26,33 @@
  ],
  "fields": [
   {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
    "fieldname": "departure",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Departure"
   },
   {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
    "fieldname": "arrival",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Arrival"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "amended_from",
@@ -47,18 +64,14 @@
    "read_only": 1
   },
   {
-   "fieldname": "column_break_2",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "section_break_4",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "departure_date",
    "fieldtype": "Date",
    "label": "Departure Date",
    "reqd": 1
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "arrival_date",
@@ -67,14 +80,8 @@
    "reqd": 1
   },
   {
-   "fieldname": "cost",
-   "fieldtype": "Currency",
-   "label": "cost"
-  },
-  {
-   "fieldname": "total_seat",
-   "fieldtype": "Int",
-   "label": "Total seat"
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "vehicle",
@@ -82,38 +89,32 @@
    "label": "vehicle"
   },
   {
-   "fieldname": "section_break_7",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "column_break_7",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "column_break_11",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_seat",
+   "fieldtype": "Int",
+   "label": "Total seat"
   },
   {
    "fieldname": "column_break_13",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "route",
-   "fieldtype": "Data",
-   "label": "Route"
-  },
-  {
-   "fieldname": "section_break_2",
-   "fieldtype": "Section Break"
+   "fieldname": "cost",
+   "fieldtype": "Currency",
+   "label": "cost"
   }
  ],
  "index_web_pages_for_search": 1,
- "is_submittable": 1,s
+ "is_submittable": 1,
  "links": [],
- "modified": "2022-05-11 12:45:02.278222",
+ "modified": "2022-05-12 12:21:17.442560",
  "modified_by": "Administrator",
  "module": "Traval App",
  "name": "Travel Category",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -143,5 +144,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
+ "states": [],
  "track_changes": 1
-}s
+}
