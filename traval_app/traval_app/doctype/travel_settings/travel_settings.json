@@ -1,29 +1,24 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2022-05-10 15:02:23.399374",
+ "creation": "2022-05-12 15:23:54.116600",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "rs_location",
-  "seat_number"
+  "rslocation"
  ],
  "fields": [
   {
-   "fieldname": "rs_location",
+   "fieldname": "rslocation",
    "fieldtype": "Int",
-   "label": "Rs/Location"
-  },
-  {
-   "fieldname": "seat_number",
-   "fieldtype": "Int",
-   "label": "Seat Number"
+   "label": "rs/location"
   }
  ],
  "index_web_pages_for_search": 1,
+ "issingle": 1,
  "links": [],
- "modified": "2022-05-10 15:02:23.399374",
+ "modified": "2022-05-12 15:34:54.654220",
  "modified_by": "Administrator",
  "module": "Traval App",
  "name": "Travel Settings",
@@ -33,16 +28,13 @@
    "create": 1,
    "delete": 1,
    "email": 1,
-   "export": 1,
    "print": 1,
    "read": 1,
-   "report": 1,
    "role": "System Manager",
    "share": 1,
    "write": 1
   }
  ],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC"
 }
