@@ -9,6 +9,7 @@
  "engine": "InnoDB",
  "field_order": [
   "route",
+  "route_name",
   "section_break_2",
   "departure",
   "column_break_2",
@@ -109,6 +110,12 @@
   {
    "fieldname": "section_break_2",
    "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "route.route_name",
+   "fieldname": "route_name",
+   "fieldtype": "Data",
+   "label": "Route Name"
   }
  ],
  "index_web_pages_for_search": 1,
