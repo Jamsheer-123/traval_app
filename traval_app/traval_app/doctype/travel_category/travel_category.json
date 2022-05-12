@@ -1,0 +1,201 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "TC.####",
+ "creation": "2022-05-10 15:11:44.438929",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "route",
+  "section_break_2",
+  "departure",
+  "column_break_2",
+  "arrival",
+  "section_break_4",
+  "amended_from",
+  "departure_date",
+  "column_break_7",
+  "arrival_date",
+  "section_break_7",
+  "vehicle",
+<<<<<<< HEAD
+  "contact",
+=======
+>>>>>>> 308d2fb3db089d16c4e27d7f1b1970b6b294223b
+  "column_break_11",
+  "total_seat",
+  "column_break_13",
+  "cost"
+ ],
+ "fields": [
+  {
+   "fieldname": "departure",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Departure"
+  },
+  {
+   "fieldname": "arrival",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Arrival"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Travel Category",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+<<<<<<< HEAD
+   "fieldname": "vehicle",
+   "fieldtype": "Data",
+   "label": "vehicle"
+  },
+  {
+=======
+>>>>>>> 308d2fb3db089d16c4e27d7f1b1970b6b294223b
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "departure_date",
+   "fieldtype": "Date",
+   "label": "Departure Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "arrival_date",
+   "fieldtype": "Date",
+   "label": "Arrival Date",
+   "reqd": 1
+<<<<<<< HEAD
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Int",
+   "label": "contact"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+=======
+  },
+  {
+   "fieldname": "cost",
+   "fieldtype": "Currency",
+   "label": "cost"
+>>>>>>> 308d2fb3db089d16c4e27d7f1b1970b6b294223b
+  },
+  {
+   "fieldname": "total_seat",
+   "fieldtype": "Int",
+   "label": "Total seat"
+  },
+  {
+<<<<<<< HEAD
+=======
+   "fieldname": "vehicle",
+   "fieldtype": "Data",
+   "label": "vehicle"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+>>>>>>> 308d2fb3db089d16c4e27d7f1b1970b6b294223b
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+<<<<<<< HEAD
+   "fieldname": "cost",
+   "fieldtype": "Currency",
+   "label": "cost"
+=======
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+>>>>>>> 308d2fb3db089d16c4e27d7f1b1970b6b294223b
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+<<<<<<< HEAD
+ "modified": "2022-05-11 13:22:16.265414",
+=======
+ "modified": "2022-05-11 12:45:02.278222",
+>>>>>>> 308d2fb3db089d16c4e27d7f1b1970b6b294223b
+ "modified_by": "Administrator",
+ "module": "Traval App",
+ "name": "Travel Category",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "admin",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

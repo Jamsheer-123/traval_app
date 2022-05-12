@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-05-10 16:18:59.779649",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "total_seat",
+  "reserved_seat",
+  "available_seat"
+ ],
+ "fields": [
+  {
+   "fetch_from": "link_7.train_seat",
+   "fieldname": "total_seat",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Total Seat"
+  },
+  {
+   "fieldname": "reserved_seat",
+   "fieldtype": "Int",
+   "label": "Reserved Seat"
+  },
+  {
+   "fieldname": "available_seat",
+   "fieldtype": "Int",
+   "label": "Available seat"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-05-11 12:52:48.783735",
+ "modified_by": "Administrator",
+ "module": "Traval App",
+ "name": "Traval seat",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
