@@ -1,8 +1,10 @@
-# Copyright (c) 2022, efeone and contributors
-# For license information, please see license.txt
-
-# import frappe
+import frappe
 from frappe.model.document import Document
 
 class TravelCategory(Document):
-	pass
+
+	def before_save(self):
+		rslocation = frappe.db.get_single_value("Travel Settings", "rslocation")
+		travel_route = frappe.get_doc("Travel Route", self.route)
+		stp = len(travel_route.stop)				
+		self.cost = rslocation * stp
