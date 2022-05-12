@@ -1,4 +1,5 @@
 {
+ "_liked_by": "[\"Administrator\"]",
  "actions": [],
  "allow_rename": 1,
  "autoname": "TC.####",
@@ -27,14 +28,14 @@
  ],
  "fields": [
   {
-   "fetch_from": "route.from_location",
+   "fetch_from": "route.to_location",
    "fieldname": "departure",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Departure"
   },
   {
-   "fetch_from": "route.to_location",
+   "fetch_from": "route.from_location",
    "fieldname": "arrival",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -120,7 +121,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-05-12 15:19:52.883000",
+ "modified": "2022-05-12 16:21:47.429603",
  "modified_by": "Administrator",
  "module": "Traval App",
  "name": "Travel Category",
