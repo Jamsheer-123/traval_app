@@ -4,11 +4,5 @@
 # import frappe
 from frappe.model.document import Document
 
-
-def before_save(self):
-	self.arrival()
-
-class Passenger(Document):
+class Location(Document):
 	pass
-def arrival(self):
-	arrival_date = frappe.get_single_value("Travel Category", "arrival_date")

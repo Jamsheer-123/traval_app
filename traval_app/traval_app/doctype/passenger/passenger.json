@@ -1,63 +1,30 @@
 {
  "actions": [],
- "autoname": "field:passenger_name",
- "creation": "2022-05-10 16:00:45.256696",
+ "allow_rename": 1,
+ "autoname": "TC.####",
+ "creation": "2022-05-10 15:11:44.438929",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "route",
+  "section_break_2",
   "departure",
+  "column_break_2",
   "arrival",
-  "departure_date",
-  "arrival_date",
-  "passenger_name",
-  "age",
-  "phone_no",
-  "no_passenger",
-  "available_seat",
+  "section_break_4",
   "amended_from",
-  "cost",
-  "submit"
+  "departure_date",
+  "column_break_7",
+  "arrival_date",
+  "section_break_7",
+  "vehicle",
+  "column_break_11",
+  "total_seat",
+  "column_break_13",
+  "cost"
  ],
  "fields": [
-  {
-   "fieldname": "passenger_name",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Passenger Name",
-   "unique": 1
-  },
-  {
-   "fieldname": "age",
-   "fieldtype": "Int",
-   "in_list_view": 1,
-   "label": "Age"
-  },
-  {
-   "fieldname": "phone_no",
-   "fieldtype": "Int",
-   "in_list_view": 1,
-   "label": "Phone No"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Passenger",
-   "print_hide": 1,
-   "read_only": 1
-  },
-  {
-   "fieldname": "no_passenger",
-   "fieldtype": "Int",
-   "label": "No of Passenger"
-  },
-  {
-   "fieldname": "submit",
-   "fieldtype": "Button",
-   "label": "Submit"
-  },
   {
    "fieldname": "departure",
    "fieldtype": "Data",
@@ -71,35 +38,82 @@
    "label": "Arrival"
   },
   {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Travel Category",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
    "fieldname": "departure_date",
    "fieldtype": "Date",
-   "in_list_view": 1,
-   "label": "Departure Date"
+   "label": "Departure Date",
+   "reqd": 1
   },
   {
    "fieldname": "arrival_date",
    "fieldtype": "Date",
-   "label": "Arrival Date"
-  },
-  {
-   "fieldname": "available_seat",
-   "fieldtype": "Data",
-   "label": "Available Seat"
+   "label": "Arrival Date",
+   "reqd": 1
   },
   {
    "fieldname": "cost",
    "fieldtype": "Currency",
-   "label": "Cost"
+   "label": "cost"
+  },
+  {
+   "fieldname": "total_seat",
+   "fieldtype": "Int",
+   "label": "Total seat"
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Data",
+   "label": "vehicle"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-05-11 11:25:07.454574",
+ "modified": "2022-05-11 12:45:02.278222",
  "modified_by": "Administrator",
  "module": "Traval App",
- "name": "Passenger",
- "naming_rule": "By fieldname",
+ "name": "Travel Category",
  "owner": "Administrator",
  "permissions": [
   {
@@ -113,10 +127,21 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "admin",
+   "share": 1,
+   "write": 1
   }
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
  "track_changes": 1
 }
