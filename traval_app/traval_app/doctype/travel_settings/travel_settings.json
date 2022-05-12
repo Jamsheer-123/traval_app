@@ -11,14 +11,14 @@
  "fields": [
   {
    "fieldname": "rslocation",
-   "fieldtype": "Data",
+   "fieldtype": "Int",
    "label": "rs/location"
   }
  ],
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2022-05-12 15:23:54.116600",
+ "modified": "2022-05-12 15:34:54.654220",
  "modified_by": "Administrator",
  "module": "Traval App",
  "name": "Travel Settings",
