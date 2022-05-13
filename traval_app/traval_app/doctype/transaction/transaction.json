@@ -2,6 +2,7 @@
  "_liked_by": "[\"Administrator\"]",
  "actions": [],
  "allow_rename": 1,
+ "autoname": "Tr.####",
  "creation": "2022-05-10 15:38:29.201042",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -16,7 +17,8 @@
   "no_passenger",
   "payment",
   "passenger_details",
-  "amended_from"
+  "amended_from",
+  "cost"
  ],
  "fields": [
   {
@@ -79,12 +81,18 @@
    "options": "Transaction",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fetch_from": "travel_category.cost",
+   "fieldname": "cost",
+   "fieldtype": "Link",
+   "options": "Travel Category"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-05-12 15:58:26.363000",
+ "modified": "2022-05-13 11:53:01.882103",
  "modified_by": "Administrator",
  "module": "Traval App",
  "name": "Transaction",
