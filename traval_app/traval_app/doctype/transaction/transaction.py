@@ -9,5 +9,10 @@ class Transaction(Document):
 		passengers = len(self.passenger_details)
 		print (passengers)
 		self.no_passenger = passengers
-		cost = frappe.db.get_single_value("Travel Category", "cost")
-		self.payment = passengers * cost
+
+
+
+	def before_submit(self):
+		travel_category = frappe.get_doc("Travel Category", self.cost)
+		passengers = self.no_passenger
+		self.payment = travel_category.cost * passengers
