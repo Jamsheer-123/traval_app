@@ -1,6 +1,8 @@
 {
+ "_liked_by": "[\"Administrator\"]",
  "actions": [],
  "allow_rename": 1,
+ "autoname": "ROUTE.###",
  "creation": "2022-05-11 11:54:39.758585",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -15,13 +17,15 @@
  "fields": [
   {
    "fieldname": "from_location",
-   "fieldtype": "Data",
-   "label": "From Location"
+   "fieldtype": "Link",
+   "label": "From Location",
+   "options": "Location"
   },
   {
    "fieldname": "to_location",
-   "fieldtype": "Data",
-   "label": "To Location"
+   "fieldtype": "Link",
+   "label": "To Location",
+   "options": "Location"
   },
   {
    "fieldname": "stop",
@@ -47,7 +51,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-05-11 14:41:22.914589",
+ "modified": "2022-05-12 17:04:40.880119",
  "modified_by": "Administrator",
  "module": "Traval App",
  "name": "Travel Route",
